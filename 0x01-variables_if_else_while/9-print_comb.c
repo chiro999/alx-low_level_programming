@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: 'print 0-9 separated by commas'
- * Return : always 0
+ * Return: always 0
 */
 int main(void)
 {
