@@ -6,12 +6,13 @@
 */
 int main(void)
 {
-	int x, y;
+	int x = 0;
+	int y = 0;
 	while (x <= '9')
 	{
 		while (y <= '9')
 		{
-			if(!(x > y || x == y))
+			if(!(x > y) || x == y)
 			{
 				putchar(x);
 				putchar(y);
