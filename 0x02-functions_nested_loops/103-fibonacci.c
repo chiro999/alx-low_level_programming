@@ -10,12 +10,12 @@ int main(void)
 
 	while (z + y < 4000000)
 	{
-	z += y ;
+	z += y;
 	if (z % 2 == 0)
 	total += z;
 	y = z - y;
 	++x;
 	}
-        printf("%ld\n", total);
+	printf("%ld\n", total);
 	return (0);	
 }
