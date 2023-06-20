@@ -11,7 +11,7 @@ int main(void)
 	while (z + y < 4000000)
 	{
 	z += y ;
-	if (y % 2 == 0)
+	if (z % 2 == 0)
 	total += z;
 	y = z - y;
 	++x;
