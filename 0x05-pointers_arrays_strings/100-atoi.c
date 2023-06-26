@@ -15,12 +15,12 @@ int _atoi(char *s)
 
 	for (c = 0; s[c] != '\0'; c++)
 	{
-		if (s[c] == '-')
+		if (s[c] == 45)
 			sign *= -1;
-		else if (s[c] >= '0' && s[c] <= '9')
+		else if (s[c] >= 48 && s[c] <= 57)
 			break;
 	}
-	while (s[c] >= '0' && s[c] <= '9')
+	while (s[c] >= 48 && s[c] <= 57)
 	{
 		sum *= 10;
 		sum += s[c] - '0';
