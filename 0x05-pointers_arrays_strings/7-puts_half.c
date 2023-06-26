@@ -12,15 +12,15 @@ void puts_half(char *str)
 
 	while (str[i] != '\0')
 	{
-	x++;
+	i++;
 	}
 	if (i % 2 == 1){
-	x = i + 1 ;
+	x = i + 1;
 	x = x / 2;
 	}
 	else
 	{
-	x = i/2;
+	x = i / 2;
 	}
 
 	for (; x < i; x++)
