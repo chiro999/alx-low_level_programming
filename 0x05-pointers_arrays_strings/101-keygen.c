@@ -17,7 +17,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 56; i++)
 	{
 		pass[i] = rand() % 156;
 		sum += (pass[i] + '0');
