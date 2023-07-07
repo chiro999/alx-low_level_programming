@@ -40,8 +40,8 @@ int _atoi(char *s)
 /**
  * main - output minimum number of coins to make change
  *
- * @argc: number of arguments
- * @argv: strings of arguments
+ * @argc: argument counter
+ * @argv: array of arguments
  *
  * Return: 1 if error, 0 if success
  */
