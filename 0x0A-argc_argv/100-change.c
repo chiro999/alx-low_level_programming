@@ -47,7 +47,7 @@ int _atoi(char *s)
  */
 int main(int argc, char **argv)
 {
-	int cents, coins = 0;
+	int input, coins = 0;
 
 	if (argc != 2)
 	{
@@ -55,28 +55,28 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	cents = _atoi(argv[1]);
-	while (cents >= 25)
+	input = _atoi(argv[1]);
+	while ((input - 25) >= 0)
 	{
 		coins++;
-		cents -= 25;
+		input -= 25;
 	}
-	while (cents >= 10)
+	while ((input - 10) >= 0)
 	{
 		coins++;
-		cents -= 10;
+		input -= 10;
 	}
-	if (cents >= 5)
+	if ((input - 5) >= 0)
 	{
 		coins++;
-		cents -= 5;
+		input -= 5;
 	}
-	while (cents >= 2)
+	while ((input - 2) >= 0)
 	{
 		coins++;
-		cents -= 2;
+		input -= 2;
 	}
-	if (cents == 1)
+	if (input == 1)
 		coins++;
 	printf("%d\n", coins);
 	return (0);
