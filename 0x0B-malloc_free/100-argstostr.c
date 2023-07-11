@@ -31,11 +31,10 @@ char *argstostr(int ac, char **av)
 		y++;
 	}
 	
-	s[y++] = '\n';
+	s[y] = '\n';
 	
 	}
 	y++;
 	s[y] = '\0';
 	return (s);
 }
-
