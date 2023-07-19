@@ -1,11 +1,13 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * op_add - adds two numbers.
  * @a: first number.
  * @b: second number.
  *
- * Return: add.
+ * Return: sum
  */
 int op_add(int a, int b)
 {
@@ -13,11 +15,11 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subctracts two numbers.
+ * op_sub - subtracts two numbers.
  * @a: first number.
  * @b: second number.
  *
- * Return: difference.
+ * Return: difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -29,7 +31,7 @@ int op_sub(int a, int b)
  * @a: first number.
  * @b: second number.
  *
- * Return: multiplication.
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -41,7 +43,7 @@ int op_mul(int a, int b)
  * @a: first number.
  * @b: second number.
  *
- * Return: division.
+ * Return: quotient
  */
 int op_div(int a, int b)
 {
@@ -54,7 +56,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - calculates the module of two numbers.
+ * op_mod - calculates the modulo of two numbers.
  * @a: first number.
  * @b: second number.
  *
