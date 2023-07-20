@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 {
 	va_list arguments;
 	unsigned int i = 0;
-	char *s;
+	char *string;
 
 	va_start(arguments, format);
 	while (format && format[i])
@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(arguments, double));
 				break;
 			case 's':
-				s = va_arg(arguments, char *);
+				string = va_arg(arguments, char *);
 				printf("%s", string  ? string : "(nil)");
 				break;
 			default:
