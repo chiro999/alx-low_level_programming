@@ -20,9 +20,8 @@ int main(int argc, char *argv[])
 	}
 
 	first_operand = atoi(argv[1]);
-	second_operand = atoi(argv[3]);
-
 	operation = get_op_func(argv[2]);
+	second_operand = atoi(argv[3]);
 
 	if (!operation)
 	{
