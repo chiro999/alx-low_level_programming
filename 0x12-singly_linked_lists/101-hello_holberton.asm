@@ -1,9 +1,9 @@
           global    main
           extern    printf
 main:
-	  mov   rdi, format
+	  mov   rdi, string
 	  xor   rax, rax
 	  call  printf
 	  mov 	rax, 0
 	  ret
-format: db `Hello, Holberton\n`,0
+string: db `Hello, Holberton\n`,0
