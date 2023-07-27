@@ -24,6 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	node_nueve->str = strdup(str);
 	node_nueve->len = i;
+	/* sets the address part of the new node to null(since it to be set as the last node */
 	node_nueve->next = NULL;
 
 	if (*head == NULL)
