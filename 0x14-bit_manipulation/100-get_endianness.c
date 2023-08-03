@@ -6,8 +6,18 @@
  */
 int get_endianness(void)
 {
+	#include <stdio.h>
+#include "main.h"
 
-	if (*(char *)& 1 == 1)
+int main(void)
+{
+	unsigned int n;
+	char *endian_or_not;
+
+	n = 1;
+	endian_or_not = (char *) & n;
+
+	if (endian_or_not == 1)
 		return (1);
 	else
 		return (0);
