@@ -6,11 +6,6 @@
  */
 int get_endianness(void)
 {
-	#include <stdio.h>
-#include "main.h"
-
-int main(void)
-{
 	unsigned int n;
 	char *endian_or_not;
 
