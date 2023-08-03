@@ -12,10 +12,9 @@ void print_binary(unsigned long int n)
 	
 	while (i >= 0)
 	{
-		shifted = n >> i;
 	
 		/* check to see whether 1 or 0 is at the index then print 1  or 0 */
-		if (shifted & 1 = '1')
+i		if ((n >> i) & 1 = '1')
 		{
 			_putchar('1');
 			ones++;
@@ -28,4 +27,3 @@ void print_binary(unsigned long int n)
 	if (!ones)
 		_putchar('0');
 }
-
