@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 	{
 	
 		/* check to see whether 1 or 0 is at the index then print 1  or 0 */
-		if ((n >> i) & 1 == '1')
+		if (((n >> i) & 1) = '1')
 		{
 			_putchar('1');
 			ones++;
