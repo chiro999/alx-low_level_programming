@@ -8,13 +8,12 @@ void print_binary(unsigned long int n)
 {
 	int i = 63;
        	int ones = 0;
-	unsigned long int shifted;
 	
 	while (i >= 0)
 	{
 	
 		/* check to see whether 1 or 0 is at the index then print 1  or 0 */
-i		if ((n >> i) & 1 = '1')
+		if ((n >> i) & 1 == '1')
 		{
 			_putchar('1');
 			ones++;
