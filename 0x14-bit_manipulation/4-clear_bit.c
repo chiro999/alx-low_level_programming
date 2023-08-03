@@ -14,9 +14,11 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	if (index >= 64)
 		return (-1);
-
+	
+	/* creates a value with only the particular index set to 1 and all other values 0 */
 	shifted = 1 << index;
-
+	
+	/* xor to set the index to 0 */
 	if (*n & shifted)
 		*n = *n ^ shifted;
 
