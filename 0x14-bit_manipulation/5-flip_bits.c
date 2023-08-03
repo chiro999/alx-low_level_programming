@@ -18,7 +18,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (bit_map)
 	{
 		i++;
-		bit_map =  bit_map & (diff - 1);
+		bit_map =  bit_map & (bitmap - 1);
 	}
 
 	return (i);
