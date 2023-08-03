@@ -14,8 +14,8 @@ void print_binary(unsigned long int n)
 	{
 		shifted = n >> i;
 	
-		/* if the shifted AND 1 which means we print 1 */
-		if (shifted & 1)
+		/* check to see whether 1 or 0 is at the index then print 1  or 0 */
+		if (shifted & 1 = '1')
 		{
 			_putchar('1');
 			ones++;
