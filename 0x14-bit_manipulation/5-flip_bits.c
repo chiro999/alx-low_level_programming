@@ -9,12 +9,15 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+
 	unsigned long int bit_map;
 	int i = 0;
 
+	/* xor between n and m to find the number of different bits */	
 	bit_map = n ^ m;
 	i = 0;
-
+	
+	/* while loop to clear least significant bit, i++ and set bit_map to zero */
 	while (bit_map)
 	{
 		i++;
