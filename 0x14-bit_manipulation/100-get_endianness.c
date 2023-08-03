@@ -10,7 +10,7 @@ int get_endianness(void)
 	char *endian_or_not;
 
 	
-	endian_or_not = (char *) & 1;
+	*endian_or_not = (char *) & 1;
 
 	return ((int)*endian_or_not);
 }
