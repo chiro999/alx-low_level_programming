@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
  	 {  
 			 
     		dec <<= 1; /* this is the same as the dec * 2 */
-    		dec += b[index]-'0'; /* this is the same as (2 * dec) + (b[index] - '0') */
+    		dec = dec + b[index]-'0'; /* this is the same as (2 * dec) + (b[index] - '0') */
    	 	index++;
  	 }
   return dec;
