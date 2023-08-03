@@ -18,8 +18,9 @@ unsigned int binary_to_uint(const char *b)
 	/* while loop to check if the number b is a binary number */
 	while (b[index] == '0' || b[index] == '1')
  	 {  
-    		dec <<= 1;
-    		dec += b[index]-'0';
+			 
+    		dec <<= 1; /* this is the same as the dec * 2 */
+    		dec += b[index]-'0'; /* this is the same as (2 * dec) + (b[index] - '0') */
    	 	index++;
  	 }
   return dec;
