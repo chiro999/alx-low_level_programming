@@ -6,6 +6,23 @@ char *create_buffer(char *file);
 void close_file(int descriptor);
 
 /**
+ * close_file - Closes file descriptors.
+ * @descriptor: The file descriptor to be closed.
+ */
+void close_file(int descriptor)
+{
+	int close_check;
+
+	close_check = close(descriptor);
+
+	if (close_check == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", descriptor);
+		exit(100);
+	}
+}
+
+/**
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer is storing chars for.
  *
@@ -25,23 +42,6 @@ char *create_buffer(char *file)
 	}
 
 	return (mem);
-}
-
-/**
- * close_file - Closes file descriptors.
- * @descriptor: The file descriptor to be closed.
- */
-void close_file(int descriptor)
-{
-	int close_check;
-
-	close_check = close(descriptor);
-
-	if (close_check == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
-	}
 }
 
 /**
