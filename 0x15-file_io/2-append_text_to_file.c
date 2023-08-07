@@ -23,9 +23,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	file_o = open(filename, O_WRONLY | O_APPEND);
 	if (file_o == -1)
 		return (-1);
+	file_w = write(file_o, text_content, i);
 	if (file_w == -1)
 		return (-1);
-	file_w = write(file_o, text_content, i);
 
 	close(file_o);
 
