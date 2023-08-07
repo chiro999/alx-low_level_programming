@@ -27,7 +27,7 @@ int create_file(const char *filename, char *text_content)
 	if(file_w == -1)
 		return (-1);
 
-	close(file_o)
+	close(file_o);
 
 	return (1);
 }
