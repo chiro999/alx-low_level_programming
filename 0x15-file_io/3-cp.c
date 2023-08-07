@@ -29,13 +29,13 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * @descriptor: The file descriptor to be closed.
  */
-void close_file(int fd)
+void close_file(int descriptor)
 {
 	int close_check;
 
-	close_check = close(fd);
+	close_check = close(descriptor);
 
 	if (close_check == -1)
 	{
