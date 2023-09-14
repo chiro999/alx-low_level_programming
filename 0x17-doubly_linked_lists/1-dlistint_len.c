@@ -14,7 +14,7 @@ size_t dlistint_len(const dlistint_t *h)
 	i = 0;
 
 	if (!h)
-		return (count);
+		return (i);
 
 	while (h->prev)
 		h = h->prev;
